@@ -3,10 +3,12 @@
 #For any value divisible by 5, the program should print "Figure".
 #For any value divisible by 4 and 5, the program should print "GoFigure".
 
-for a in range(0, 100, 1):
+for a in range(1, 101, 1):
     if a % 4 == 0 and a % 5 == 0:
-        print("Go Figure")
+        print(a, " Go Figure")
     elif a % 5 == 0:
-        print("Figure")
+        print(a, " Figure")
     elif a % 4 == 0:
-        print("Go")
+        print(a, " Go")
+    else:
+        print(a)
